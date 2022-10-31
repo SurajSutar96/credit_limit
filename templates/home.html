@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+<center>
+<body>
+    <h1>Credit Limit</h1>
+    <form action="{{ url_for('predict')}}"method="post">
+        <label>Income</label>
+    	  <input type="text" name="Income" placeholder="Income" required="required" />
+        <br><br>
+        <label>Rating</label>
+    	  <input type="text" name="Rating" placeholder="Rating" required="required" />
+        <br><br>
+        <label>Cards</label>
+    	  <input type="text" name="Cards" placeholder="Cards" required="required" />
+        <br><br>
+        <label>Age</label>
+    	  <input type="text" name="Age" placeholder="Age" required="required" />
+        <br><br>
+        <label>Education</label>
+    	  <input type="text" name="Education" placeholder="Education" required="required" />
+        <br><br>
+        <label>Gender</label>
+    	  <input type="text" name="Gender" placeholder="[0-Female,1-Male]" required="required" />
+        <br><br>
+        <label>Married</label>
+    	  <input type="text" name="Married" placeholder="[0-No,1-Yes]" required="required" />
+        <br><br>
+        <label>Balance</label>
+    	  <input type="text" name="Balance" placeholder="Balance" required="required" />
+        <br><br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+   <br><br>
+   {{ predictions }}
+</body>
+</center>
+</html>
